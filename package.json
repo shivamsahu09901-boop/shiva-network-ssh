@@ -1,9 +1,0 @@
-{
-  "name": "shivam-ssh-ws",
-  "version": "1.0.0",
-  "description": "SSH over WebSocket for Render",
-  "main": "server.js",
-  "dependencies": {
-    "ws": "^8.13.0"
-  }
-}
