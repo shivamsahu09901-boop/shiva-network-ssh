@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Dropbear ko local port 2222 par background me start karna
-dropbear -F -E -p 127.0.0.1:2222 &
+# Dropbear ko optimized settings ke saath start karo
+dropbear -F -E -p 127.0.0.1:2222 -K 60 -I 300 &
 
-# Proxy script ko fire karna
+# Wait for dropbear to start
+sleep 2
+
+# Proxy script start karo
 python3 /app/ws-proxy.py
